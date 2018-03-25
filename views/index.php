@@ -17,7 +17,7 @@
   <body onLoad="javascript:preloader()">
     <script src="main.js"></script>
     <header>
-      <a href='/'>Home Page</a>
+      <h1>Lista de Endereços</h1>
     </header>
     <div id="mainContainer">
       <div id="loader">

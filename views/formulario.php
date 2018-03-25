@@ -1,4 +1,4 @@
-<form id="addressForm">
+<form id="insertAddressForm" class="addressForm">
   <input type="text" name="nome">
   <input type="text" name="sobrenome">
   <input type="text" name="endereco">
