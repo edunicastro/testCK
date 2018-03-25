@@ -1,0 +1,80 @@
+$higlight-color: #f0f0f0;
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+#tabelaContainer > table {
+  margin: auto;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+body {
+  font-family: Open Sans, sans-serif;
+  font-size: 13px;
+  margin: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000;
+}
+
+h1 {
+  font-size: 21px;
+  margin: 1.5em 0;
+}
+
+table.highlight-table {
+  overflow: hidden;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  td,
+  th {
+    padding: 10px;
+    position: relative;
+    outline: 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    vertical-align: top;
+    cursor: default;
+  }
+
+  th {
+    font-weight: bold;
+  }
+
+  thead th {
+    border-bottom-width: 2px;
+  }
+
+  tbody th {
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  tbody > tr:hover {
+    td {
+      background: $higlight-color;
+    }
+  }
+
+  td:hover {
+    &:after {
+      content: "";
+      position: absolute;
+      z-index: -2;
+      top: -5000px;
+      left: 0;
+      width: 100%;
+      background: $higlight-color;
+    }
+  }
+}
