@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <title>Lista de Endereços</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700,500' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="public/styles/main.css">
     <script>
       const preloader = () => {

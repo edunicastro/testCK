@@ -1,17 +1,7 @@
-$higlight-color: #f0f0f0;
-
 *,
 *:before,
 *:after {
   box-sizing: border-box;
-}
-
-#tabelaContainer > table {
-  margin: auto;
-}
-
-button:hover {
-  cursor: pointer;
 }
 
 body {
@@ -23,58 +13,99 @@ body {
   color: #000;
 }
 
-h1 {
-  font-size: 21px;
-  margin: 1.5em 0;
+button:hover {
+  cursor: pointer;
+}
+
+table {
+  margin: auto;
+}
+
+table.highlight-table td,
+table.highlight-table th {
+  padding: 10px;
+  position: relative;
+  outline: 0;
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  vertical-align: top;
+  cursor: default;
+}
+
+table.highlight-table th {
+  font-weight: bold;
+}
+
+table.highlight-table thead th {
+  border-bottom-width: 2px;
+}
+
+table.highlight-table tbody th {
+  text-align: left;
+  white-space: nowrap;
+}
+
+table.highlight-table tbody > tr:hover td {
+  background: #f0f0f0;
 }
 
 table.highlight-table {
-  overflow: hidden;
-  width: auto;
-  max-width: 100%;
+  max-width: 70%;
   margin: 0 auto;
   border-collapse: collapse;
   border-spacing: 0;
+}
 
-  td,
-  th {
-    padding: 10px;
-    position: relative;
-    outline: 0;
-    text-align: center;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    vertical-align: top;
-    cursor: default;
-  }
+#delButton {
+  font: 18px "Roboto";
+  text-align: center;
+  display: inline-block;
+  height: 30px;
+  width: 100px;
+  line-height: 30px;
+  border: 2px solid #cdcdcd;
+  border-radius: 3px;
+  font-weight: 400;
+  color: #aaa;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.63, 1.75, 0.22, 0.57);
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  background: white;
+}
+#delButton:hover {
+  border: 2px solid #e03e28;
+  color: #e03e28;
+}
+#delButton.activate {
+  border: 2px solid #e03e28 !important;
+  box-shadow: inset 0px 55px 0px 0px #e03e28;
+  color: #fff;
+}
 
-  th {
-    font-weight: bold;
-  }
-
-  thead th {
-    border-bottom-width: 2px;
-  }
-
-  tbody th {
-    text-align: left;
-    white-space: nowrap;
-  }
-
-  tbody > tr:hover {
-    td {
-      background: $higlight-color;
-    }
-  }
-
-  td:hover {
-    &:after {
-      content: "";
-      position: absolute;
-      z-index: -2;
-      top: -5000px;
-      left: 0;
-      width: 100%;
-      background: $higlight-color;
-    }
-  }
+#editButton {
+  font: 18px "Roboto";
+  text-align: center;
+  display: inline-block;
+  height: 30px;
+  width: 100px;
+  line-height: 30px;
+  border: 2px solid #cdcdcd;
+  border-radius: 3px;
+  font-weight: 400;
+  color: #aaa;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.63, 1.75, 0.22, 0.57);
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  background: white;
+}
+#editButton:hover {
+  border: 2px solid #afd275;
+  color: #afd275;
+}
+#editButton.activate {
+  border: 2px solid #afd275 !important;
+  box-shadow: inset 0px 55px 0px 0px #afd275;
+  color: #fff;
 }
