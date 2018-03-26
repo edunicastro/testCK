@@ -1,88 +1,88 @@
-@import "buttons.css";
-@import "formPlaceholders.css";
+@import 'buttons.css';
+@import 'formPlaceholders.css';
 
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 #formularioContainer,
 #tabelaContainer {
-  max-width: 800px;
-  margin: auto;
+	max-width: 800px;
+	margin: auto;
 }
 
 body {
-  font-family: Open Sans, sans-serif;
-  font-size: 13px;
-  margin: 20px;
-  text-align: center;
-  color: #000;
+	font-family: Raleway, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	margin: 20px;
+	text-align: center;
+	color: #000;
 }
 
 h1,
 legend,
 label,
 thead {
-  text-transform: uppercase;
+	text-transform: uppercase;
 }
 
 fieldset {
-  text-align: left;
+	text-align: left;
 }
 
 table {
-  margin: auto;
-  min-width: 780px;
+	margin: auto;
+	min-width: 780px;
 }
 
 table input {
-  height: 20px;
-  margin-top: 5px;
+	height: 20px;
+	margin-top: 5px;
 }
 
 .addressForm > div {
-  display: inline-block;
-  text-align: left;
+	display: inline-block;
+	text-align: left;
 }
 
 table.highlight-table td,
 table.highlight-table th {
-  padding: 10px;
-  position: relative;
-  outline: 0;
-  text-align: left;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  vertical-align: top;
-  cursor: default;
+	padding: 10px;
+	position: relative;
+	outline: 0;
+	text-align: left;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	vertical-align: top;
+	cursor: default;
 }
 table.highlight-table td:nth-child(-n + 3) {
-  min-width: 180px;
+	min-width: 180px;
 }
 
 table.highlight-table th {
-  font-weight: bold;
+	font-weight: bold;
 }
 
 table.highlight-table thead th {
-  border-bottom-width: 2px;
+	border-bottom-width: 2px;
 }
 
 table.highlight-table tbody th {
-  text-align: left;
-  white-space: nowrap;
+	text-align: left;
+	white-space: nowrap;
 }
 
 table.highlight-table tbody > tr:hover td {
-  background: #f0f0f0;
+	background: #f0f0f0;
 }
 
 table.highlight-table {
-  max-width: 70%;
-  margin: 0 auto;
-  border-collapse: collapse;
-  border-spacing: 0;
+	max-width: 70%;
+	margin: 0 auto;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 footer {
