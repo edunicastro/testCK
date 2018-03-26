@@ -13,6 +13,10 @@ body {
 	color: #000;
 }
 
+fieldset {
+	text-align: left;
+}
+
 button:hover {
 	cursor: pointer;
 }
@@ -20,7 +24,10 @@ button:hover {
 table {
 	margin: auto;
 }
-
+.addressForm > div {
+	display: inline-block;
+	text-align: left;
+}
 table.highlight-table td,
 table.highlight-table th {
 	padding: 10px;
