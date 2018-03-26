@@ -27,7 +27,7 @@
       <div id="tabelaContainer"></div>
     </div>
     <footer>
-      Copyright
+      <h4>Copyright</h4>
     </footer>
   </body>
 </html>

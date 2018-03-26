@@ -20,7 +20,7 @@ if(isset($_GET['acao'])) {
     case 'update':
       if($_POST['id']!='' && $_POST['nome']!='' && $_POST['sobrenome']!='' && $_POST['endereco']!='') {
         $stmt = $cliente->updateCliente($_POST);
-        $rows = $cliente->getAll()->fetchAll(PDO::FETCH_ASSOC);
+        $rows = $cliente->getById($_POST['id'])->fetchAll(PDO::FETCH_ASSOC)[0];
         echo json_encode($rows);
       }
     break;
@@ -57,6 +57,13 @@ class Cliente {
 
     function getAll() {
       $stmt = $this->conn->prepare("SELECT * FROM $this->table_name;");
+      $stmt->execute();
+      return $stmt;
+    }
+
+    function getById($id) {
+      $stmt = $this->conn->prepare("SELECT * FROM $this->table_name WHERE id=:id;");
+      $stmt->bindValue(":id", $id);
       $stmt->execute();
       return $stmt;
     }
