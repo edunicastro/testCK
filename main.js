@@ -227,6 +227,10 @@ $(document).on("submit", "#insertAddressForm", function(e) {
       .find("input:text")
       .val("");
     appendToAddressTable(result);
+
+    $(".form-holder__label").each(function() {
+      $(this).removeClass("notempty");
+    });
   });
 });
 

@@ -7,7 +7,7 @@ button:hover {
   text-align: center;
   display: inline-block;
   height: 30px;
-  width: 100px;
+  width: 150px;
   line-height: 30px;
   border-radius: 3px;
   border: 2px solid #afd275 !important;
@@ -22,6 +22,10 @@ button:hover {
 #saveButton:focus {
   outline: none;
   text-transform: uppercase;
+}
+
+#saveButton:active {
+  transform: translateY(4px);
 }
 
 #delButton {

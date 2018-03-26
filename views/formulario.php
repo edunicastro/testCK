@@ -14,7 +14,7 @@
     <label class="form-holder__label" for="endereco">Endereço:</label>
   </div>
   <div class="form-holder">
-    <button id="saveButton" type="submit">Salvar</button>
+    <button id="saveButton" type="submit">Adicionar</button>
   </div>
   </fieldset>
 </form>

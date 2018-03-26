@@ -3,6 +3,10 @@
   margin: 16px 0 22px;
 }
 
+.form-holder:last-child {
+  text-align: center;
+}
+
 .form-holder__input {
   display: block;
   width: 100%;
